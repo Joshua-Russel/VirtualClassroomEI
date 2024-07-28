@@ -21,7 +21,6 @@ public class dbfunctions {
 				stmt.setString(1, className);
 				stmt.setString(2, assignmentDetails);
 				stmt.executeUpdate();
-				System.out.println("Assignment for " + className + " has been scheduled.");
 				return true;
 			}
 		} catch (SQLException e) {
@@ -39,7 +38,6 @@ public class dbfunctions {
 				stmt.setString(2, className);
 				stmt.setString(3, assignmentDetails);
 				stmt.executeUpdate();
-				System.out.println("Assignment submitted by Student " + studentId + " in " + className + ".");
 				return true;
 			}
 		} catch (SQLException e) {

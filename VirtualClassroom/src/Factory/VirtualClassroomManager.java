@@ -28,6 +28,7 @@ public class VirtualClassroomManager {
 			connection = DriverManager.getConnection(URL, USER, PASSWORD);
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		return connection;
 
@@ -43,6 +44,7 @@ public class VirtualClassroomManager {
 
 		} catch (ExceptionHandlers.ClassroomCreationException cl) {
 			cl.printStackTrace();
+			System.out.println(cl.getMessage());
 		}
 	}
 
@@ -55,6 +57,7 @@ public class VirtualClassroomManager {
 
 		} catch (ExceptionHandlers.ClassroomRemovalException cl) {
 			cl.printStackTrace();
+			System.out.println(cl.getMessage());
 		}
 	}
 
@@ -62,11 +65,12 @@ public class VirtualClassroomManager {
 		try {
 			boolean success = dbfn.enrollStudent(ID, Name, ClassName);
 			if (success) {
-				System.out.println("Student " + ID + " added to " + ClassName + "successfully");
+				System.out.println("Student " + ID + " added to " + ClassName + " successfully");
 			}
 
 		} catch (ExceptionHandlers.StudentEnrollmentException cl) {
 			cl.printStackTrace();
+			System.out.println(cl.getMessage());
 		}
 	}
 
@@ -78,6 +82,7 @@ public class VirtualClassroomManager {
 			}
 
 		} catch (ExceptionHandlers.AssignmentSchedulingException cl) {
+			System.out.println(cl.getMessage());
 			cl.printStackTrace();
 		}
 	}
@@ -90,6 +95,7 @@ public class VirtualClassroomManager {
 			}
 
 		} catch (ExceptionHandlers.AssignmentSubmissionException cl) {
+			System.out.println(cl.getMessage());
 			cl.printStackTrace();
 		}
 	}
