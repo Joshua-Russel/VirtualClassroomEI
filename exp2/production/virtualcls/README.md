@@ -24,7 +24,7 @@ studentId, classroom_name, AssignmentDetails).
 **Command-Line Interface (CLI):** The terminal-based user interface for interacting with the application.
 
 **Java Codebase Connectivity:** The codebase responsible for handling classroom, student, and assignment operations.
-![MVC](./assets/img.png)
+![MVC](https://github.com/BassammaKorvi/Virtual-Classroom-Manager/assets/96287096/f6980bf5-51a6-4160-82ac-e1fca11fc910)
 
 ## Tech Stack
 
@@ -78,6 +78,11 @@ Compile your Java application. You can typically do this from your IDE.
 With these steps completed, your Virtual Classroom Manager should be ready to use. It will connect to the PostgreSQL
 database
 and allow you to manage virtual classrooms, students, and assignments through the terminal-based interface.
+
+## Documentation
+
+[Documentation]()
+)
 
 
 

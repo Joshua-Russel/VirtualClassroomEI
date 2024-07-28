@@ -34,6 +34,7 @@ public class Main {
 						System.out.println("schedule_assignment [Class_name] [assignment_details]");
 						System.out.println("submit_assignment [student_id] [Class_name] [assignment_details]");
 						System.out.println("list_students [class_name]");
+						System.out.println("list_classrooms");
 						System.out.println("list_commands");
 						System.out.println("exit");
 
