@@ -36,7 +36,10 @@ public class VirtualClassroomManager {
 
 	public void addClass(String ClassName) {
 		try {
-			dbfn.addClassroom(ClassName);
+			boolean success = dbfn.addClassroom(ClassName);
+			if (success) {
+				System.out.println("Class " + ClassName + " added successfully");
+			}
 
 		} catch (ExceptionHandlers.ClassroomCreationException cl) {
 			cl.printStackTrace();
@@ -45,7 +48,10 @@ public class VirtualClassroomManager {
 
 	public void removeClass(String ClassName) {
 		try {
-			dbfn.removeClassroom(ClassName);
+			boolean success = dbfn.removeClassroom(ClassName);
+			if (success) {
+				System.out.println("Class " + ClassName + " removed successfully");
+			}
 
 		} catch (ExceptionHandlers.ClassroomRemovalException cl) {
 			cl.printStackTrace();
@@ -54,7 +60,10 @@ public class VirtualClassroomManager {
 
 	public void addStudent(int ID, String Name, String ClassName) {
 		try {
-			dbfn.enrollStudent(ID, Name, ClassName);
+			boolean success = dbfn.enrollStudent(ID, Name, ClassName);
+			if (success) {
+				System.out.println("Student " + ID + " added to " + ClassName + "successfully");
+			}
 
 		} catch (ExceptionHandlers.StudentEnrollmentException cl) {
 			cl.printStackTrace();
@@ -63,7 +72,10 @@ public class VirtualClassroomManager {
 
 	public void scheduleAssignment(String ClassName, String Details) {
 		try {
-			dbfn.scheduleAssignment(ClassName, Details);
+			boolean success = dbfn.scheduleAssignment(ClassName, Details);
+			if (success) {
+				System.out.println("Assignment for" + ClassName + " has been scheduled successfully");
+			}
 
 		} catch (ExceptionHandlers.AssignmentSchedulingException cl) {
 			cl.printStackTrace();
@@ -72,7 +84,10 @@ public class VirtualClassroomManager {
 
 	public void submit(int ID, String ClassName, String Details) {
 		try {
-			dbfn.submitAssignment(ID, ClassName, Details);
+			boolean success = dbfn.submitAssignment(ID, ClassName, Details);
+			if (success) {
+				System.out.println("Assignment submitted by Student" + ID + " in " + ClassName);
+			}
 
 		} catch (ExceptionHandlers.AssignmentSubmissionException cl) {
 			cl.printStackTrace();

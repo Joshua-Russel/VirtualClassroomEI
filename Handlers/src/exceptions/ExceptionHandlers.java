@@ -1,47 +1,44 @@
 package exceptions;
 
 public class ExceptionHandlers {
-    public static class ClassroomCreationException extends Exception {
+	public static class ClassroomCreationException extends Exception {
 
-        private static final long serialVersionUID = 1L;
 
-        public ClassroomCreationException(String message) {
-            super(message);
-        }
-    }
+		public ClassroomCreationException(String message) {
+			super(message);
+		}
+	}
 
-    public static class ClassroomRemovalException extends Exception {
+	public static class ClassroomRemovalException extends Exception {
 
-        private static final long serialVersionUID = 1L;
 
-        public ClassroomRemovalException(String message) {
-            super(message);
-        }
-    }
-    public static class AssignmentSchedulingException extends Exception {
+		public ClassroomRemovalException(String message) {
+			super(message);
+		}
+	}
 
-        private static final long serialVersionUID = 1L;
+	public static class AssignmentSchedulingException extends Exception {
 
-        public AssignmentSchedulingException(String message) {
-            super(message);
-        }
-    }
-    public static class AssignmentSubmissionException extends Exception {
 
-        private static final long serialVersionUID = 1L;
+		public AssignmentSchedulingException(String message) {
+			super(message);
+		}
+	}
 
-        public AssignmentSubmissionException(String message) {
-            super(message);
-        }
-    }
+	public static class AssignmentSubmissionException extends Exception {
 
-    public static class StudentEnrollmentException extends Exception {
 
-        private static final long serialVersionUID = 1L;
+		public AssignmentSubmissionException(String message) {
+			super(message);
+		}
+	}
 
-        public StudentEnrollmentException(String message) {
-            super(message);
-        }
-    }
+	public static class StudentEnrollmentException extends Exception {
+
+
+		public StudentEnrollmentException(String message) {
+			super(message);
+		}
+	}
 
 }

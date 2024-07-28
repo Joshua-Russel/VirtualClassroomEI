@@ -1,3 +1,5 @@
+package virtualcls;
+
 import Factory.VirtualClassroomManager;
 
 import java.io.BufferedReader;
@@ -24,6 +26,17 @@ public class Main {
 					continue;
 				}
 				switch (a[0]) {
+					case "list_commands":
+						System.out.println("List of commands: ");
+						System.out.println("add_classroom [class_name]");
+						System.out.println("remove_classroom [class_name]");
+						System.out.println("add_student [Student_id] [stu_name] [class_name]");
+						System.out.println("schedule_assignment [Class_name] [assignment_details]");
+						System.out.println("submit_assignment [student_id] [Class_name] [assignment_details]");
+						System.out.println("list_students [class_name]");
+						System.out.println("exit");
+
+						break;
 					case "add_classroom":
 						if (a.length > 1) {
 							vcm.addClass(a[1]);
@@ -81,6 +94,14 @@ public class Main {
 						break;
 					default:
 						System.out.println("Invalid command");
+						System.out.println("List of commands: ");
+						System.out.println("add_classroom [class_name]");
+						System.out.println("remove_classroom [class_name]");
+						System.out.println("add_student [Student_id] [stu_name] [class_name]");
+						System.out.println("schedule_assignment [Class_name] [assignment_details]");
+						System.out.println("submit_assignment [student_id] [Class_name] [assignment_details]");
+						System.out.println("list_students [class_name]");
+						System.out.println("exit");
 						break;
 				}
 			}

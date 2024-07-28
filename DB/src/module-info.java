@@ -1,5 +1,5 @@
-module DB {
-    requires java.sql;
-    requires Handlers;
-    exports postgres to VirtualClassroom;
+module DB.src {
+	requires java.sql;
+	requires Handlers.src;
+	exports postgres to VirtualClassroom.src;
 }

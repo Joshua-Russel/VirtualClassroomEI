@@ -1,3 +1,3 @@
-module Handlers {
-    exports exceptions;
+module Handlers.src {
+	exports exceptions;
 }

@@ -1,7 +1,7 @@
-module VirtualClassroom {
+module VirtualClassroom.src {
     requires java.sql;
-    requires Handlers;
-    requires DB;
+    requires Handlers.src;
+    requires DB.src;
     exports Factory;
 
 }
